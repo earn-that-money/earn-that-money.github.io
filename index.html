@@ -1,49 +1,44 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plinko Spil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plinko Game</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<!-- Google AdSense library -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3686489102160595"
+     crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="container">
 
-  <div id="controls">
-    <div>
-      <label for="rowsRange">Rows</label>
-      <input type="range" id="rowsRange" min="5" max="10" value="7" />
-    </div>
-    <div>
-      <label for="ballsAtOnceRange">Balls At Once</label>
-      <input type="range" id="ballsAtOnceRange" min="1" max="5" value="1" />
-    </div>
-    <div>
-      <label for="centerBiasRange">Center Bias</label>
-      <input type="range" id="centerBiasRange" min="0" max="100" value="50" />
-    </div>
-    
-    <div>
-      <label for="betAmountInput">Bet Amount</label>
-      <input type="number" id="betAmountInput" min="0.1" step="0.1" value="1" />
-      <button id="betButton">Bet</button>
-    </div>
+  <!-- Top AdSense Ad -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3686489102160595"
+       data-ad-slot="5055117874"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
-    <div id="balance">Balance: $100.00</div>
+  <!-- Game Controls -->
+  <div id="controls">
+    <button id="drop-ball">Drop Ball</button>
   </div>
 
+  <!-- Plinko Board and Slots -->
   <div id="board-container">
     <div id="slots-left"></div>
     <div id="board"></div>
     <div id="slots-right"></div>
   </div>
-  
 </div>
 
-<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
